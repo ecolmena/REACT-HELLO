@@ -1,0 +1,52 @@
+.root {
+  --large-space: 1.5rem;
+  --medium-space: 0.6rem;
+  --small-space: 0.3rem;
+  --dark-grey: #8899a6;
+  --dot: "\00b7";
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.tweet {
+  display: flex;
+  gap: var(--medium-space);
+  width: 35rem;
+  min-height: 4rem;
+  border: 1px solid #cccccc;
+  padding: var(--medium-space);
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--small-space);
+  margin-right: var(--medium-space);
+}
+
+.content {
+  display: flex;
+  gap: var(--small-space);
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: var(--small-space);
+}
+
+.handle {
+  color: var(--dark-grey);
+  font-size: 0.8rem;
+  margin-right: var(--small-space);
+}
+
+.time {
+  color: var(--dark-grey);
+  padding-right: var(--small-space);
+}
